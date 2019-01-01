@@ -1,0 +1,31 @@
+{
+  "name": "pen-scaffold",
+  "version": "1.0.0",
+  "description": "This is a pre-built starter template utilizing Postgres, Express.js, and Node.js (with TypeScript)",
+  "main": "index.ts",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ao10/PEN-Scaffold.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ao10/PEN-Scaffold/issues"
+  },
+  "homepage": "https://github.com/ao10/PEN-Scaffold#readme",
+  "devDependencies": {
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "@types/node": "^10.12.18",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "ts-node": "^7.0.1"
+  }
+}
